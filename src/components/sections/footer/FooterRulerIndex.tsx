@@ -33,11 +33,11 @@ const formatTime = (timeZone?: string) => {
 };
 
 const FooterRulerIndex = ({
-  wordmark = "Bramble",
+  wordmark = "Mackcode",
   columns = defaultColumns,
   city = "Chicago",
   timeZone,
-  copyright = "©2026 Bramble Studio",
+  copyright = "©2026 Mackcode",
   backToTop = "Back to top",
   ariaLabel,
   className = "",
