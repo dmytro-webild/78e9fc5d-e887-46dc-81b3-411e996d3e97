@@ -78,6 +78,19 @@ export default function Layout() {
               ]
             },
             {
+              title: "Enquiries",
+              links: [
+                {
+                  text: "makcodebros@gmail.com",
+                  href: "mailto:makcodebros@gmail.com"
+                },
+                {
+                  text: "7356743300",
+                  href: "tel:7356743300"
+                }
+              ]
+            },
+            {
               title: "Connect",
               links: [
                 {
