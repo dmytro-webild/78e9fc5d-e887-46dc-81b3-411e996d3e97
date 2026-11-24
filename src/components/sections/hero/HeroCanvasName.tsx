@@ -56,7 +56,7 @@ const Pointer = ({ tone, flip }: { tone: string; flip: boolean }) => (
 
 const HeroCanvasName = ({
   note = "we are",
-  title = "Bramble",
+  title = "Mackcode",
   notes = ["Now designing for Northwind Health", "Recently shipped with Lumen AI"],
   status = "Booking projects for spring",
   description = "We design apps, websites and design systems for growing companies.",

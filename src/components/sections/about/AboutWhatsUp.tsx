@@ -98,7 +98,7 @@ const PolaroidCard = ({ variants, children }: { variants: Variants; children: Re
 const AboutWhatsUp = ({
   note = "about us!",
   label = "what's up",
-  title = "We're Bramble {0} a product and brand studio in Chicago that gets excited {1} about making complicated things simple {2}.",
+  title = "We're Mackcode {0} a web design agency that gets excited {1} about making high-performing websites simple {2}.",
   inlineImages = [
     { src: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=200", alt: "Designer at a laptop" },
     { src: "https://images.pexels.com/photos/10202668/pexels-photo-10202668.jpeg?auto=compress&cs=tinysrgb&w=200", alt: "Colour swatches" },

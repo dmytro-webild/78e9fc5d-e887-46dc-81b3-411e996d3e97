@@ -31,7 +31,7 @@ const defaultNav: NavItem[] = [
 ];
 
 const NavbarTabStrip = ({
-  brand = "Bramble",
+  brand = "Mackcode",
   logoSrc,
   navItems = defaultNav,
   primaryButton = { text: "Contact", href: "#contact" },

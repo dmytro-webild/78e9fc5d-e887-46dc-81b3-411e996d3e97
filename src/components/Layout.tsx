@@ -7,7 +7,7 @@ export default function Layout() {
     <div className="relative isolate min-h-svh flex flex-col bg-background text-foreground" data-button="solid" data-card="outline" data-pattern="grid">
       <header data-webild-section="Header">
         <NavbarTabStrip
-          brand="Dev3D Studio"
+          brand="Mackcode"
           navItems={[
             {
               name: "Home",
@@ -46,7 +46,7 @@ export default function Layout() {
       </main>
       <footer data-webild-section="Footer" data-section="footer">
         <FooterRulerIndex
-          wordmark="Dev3D Studio"
+          wordmark="Mackcode"
           columns={[
             {
               title: "Navigation",
@@ -114,7 +114,7 @@ export default function Layout() {
           ]}
           city="Austin"
           timeZone="America/Chicago"
-          copyright="© 2026 Dev3D Studio. All rights reserved."
+          copyright="© 2026 Mackcode. All rights reserved."
           backToTop="Back to top"
         />
       </footer>

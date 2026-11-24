@@ -17,7 +17,7 @@ export default function HomePage() {
       <div id="hero" data-webild-section="HeroCanvasName" data-webild-section-id="HeroCanvasName-1" data-section="hero" data-scene>
         <HeroCanvasName
           note="we are"
-          title="Dev3D Studio"
+          title="Mackcode"
           notes={[
             "Interactive sites",
             "High performance"
@@ -29,7 +29,7 @@ export default function HomePage() {
             href: "#contact"
           }}
           tags={[
-            "Web Studio",
+            "Mackcode Studio",
             "Austin, TX"
           ]}
           avatars={[
@@ -176,7 +176,7 @@ export default function HomePage() {
           title="What Local Clients Say"
           items={[
             {
-              quote: "Dev3D transformed our coffee shop site with interactive 3D menus. Online order inquiries jumped instantly.",
+              quote: "Mackcode transformed our coffee shop site with interactive 3D menus. Online order inquiries jumped instantly.",
               name: "Daniel Okafor",
               company: "Nexus Coffee",
               imageSrc: "https://img.b2bpic.net/free-photo/smiling-handsome-man-meeting_329181-1766.jpg",
@@ -204,7 +204,7 @@ export default function HomePage() {
               count: 5
             },
             {
-              quote: "Dev3D built a breathtaking site that displays our floral arrangements. Our online bookings skyrocketed.",
+              quote: "Mackcode built a breathtaking site that displays our floral arrangements. Our online bookings skyrocketed.",
               name: "Ryan Graham",
               company: "Bloom Floristry",
               imageSrc: "https://img.b2bpic.net/free-photo/smiling-young-florist-holding-spikelet-shop_23-2147882391.jpg",

@@ -77,7 +77,7 @@ const FaqCommentThreads = ({
   avatarAlt = "Studio lead",
   items = [
     { title: "Do you design websites, or only digital products?", description: "Both. Next to app and dashboard work we design and build marketing sites, with a story first and visuals second." },
-    { title: "What does a project with Bramble look like?", description: "A short discovery week, then design in two week sprints with a live prototype you can click at every review." },
+    { title: "What does a project with Mackcode look like?", description: "A short discovery week, then design in two week sprints with a live prototype you can click at every review." },
     { title: "Do you build design systems, or just screens?", description: "Systems, whenever the product will outlive the launch. A shared library and tokens are what let your team keep shipping." },
     { title: "How soon can we start?", description: "We usually book four to six weeks ahead. Small brand projects can sometimes slot in sooner." },
   ],
