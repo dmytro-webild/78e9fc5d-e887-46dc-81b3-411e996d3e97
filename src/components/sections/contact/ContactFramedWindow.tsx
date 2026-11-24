@@ -24,6 +24,8 @@ type ContactFramedWindowProps = {
   images?: Photo[];
   ariaLabel?: string;
   className?: string;
+  email?: string;
+  phone?: string;
 };
 
 const defaults: Photo[] = [
@@ -44,6 +46,8 @@ const ContactFramedWindow = ({
   images = defaults,
   ariaLabel,
   className,
+  email,
+  phone,
 }: ContactFramedWindowProps) => {
   const reduce = !!useReducedMotion();
   const kit = useKitMotion();
@@ -103,6 +107,42 @@ const ContactFramedWindow = ({
       <div className="mx-auto grid w-[var(--container)] grid-cols-1 gap-[clamp(3rem,5vw,5rem)] lg:grid-cols-2 lg:items-stretch">
         <div className="flex flex-col">
           <NudgeHeader title={title} align="left" />
+          {(email || phone) && (
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "0px 0px -10% 0px" }}
+              transition={{ duration: kit.base, ease: kit.ease, delay: 0.1 }}
+              className="mt-[clamp(1.5rem,3vw,2rem)] flex flex-wrap gap-x-[2rem] gap-y-[1rem] border-y border-border py-[1rem]"
+            >
+              {email && (
+                <div className="flex flex-col gap-[0.25rem]">
+                  <p className="font-mono text-[length:calc(var(--text-small)*0.85)] uppercase tracking-[var(--label-tracking)] text-muted-foreground">
+                    Enquiry Email
+                  </p>
+                  <a
+                    href={`mailto:${email}`}
+                    className="font-mono text-[length:var(--text-body)] text-foreground transition-colors hover:text-accent underline underline-offset-4"
+                  >
+                    {email}
+                  </a>
+                </div>
+              )}
+              {phone && (
+                <div className="flex flex-col gap-[0.25rem]">
+                  <p className="font-mono text-[length:calc(var(--text-small)*0.85)] uppercase tracking-[var(--label-tracking)] text-muted-foreground">
+                    Phone / Call
+                  </p>
+                  <a
+                    href={`tel:${phone}`}
+                    className="font-mono text-[length:var(--text-body)] text-foreground transition-colors hover:text-accent underline underline-offset-4"
+                  >
+                    {phone}
+                  </a>
+                </div>
+              )}
+            </motion.div>
+          )}
           <motion.form
             onSubmit={onSubmit}
             initial={reduce ? false : { opacity: 0, y: 16 }}

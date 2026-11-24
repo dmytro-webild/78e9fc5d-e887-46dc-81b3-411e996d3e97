@@ -258,10 +258,12 @@ export default function HomePage() {
       <div id="contact" data-webild-section="ContactFramedWindow" data-webild-section-id="ContactFramedWindow-1" data-section="contact">
         <ContactFramedWindow
           title="Start Your Project"
+          email="makcodebros@gmail.com"
+          phone="7356743300"
           submitText="Send Request"
           successText="Thank you! We will respond within 24 hours."
-          caption="Our Austin design studio"
-          chip="AUSTIN, TX"
+          caption="Enquiry: makcodebros@gmail.com | 7356743300"
+          chip="ENQUIRIES"
           images={[
             {
               imageSrc: "https://img.b2bpic.net/free-photo/desk-arrangement-with-plant-pot_23-2148577670.jpg",
