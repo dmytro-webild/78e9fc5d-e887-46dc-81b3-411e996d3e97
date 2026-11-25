@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import NavbarTabStrip from "@/components/navbars/NavbarTabStrip";
 import FooterRulerIndex from "@/components/sections/footer/FooterRulerIndex";
+import WhatsAppEnquiryWidget from "@/components/WhatsAppEnquiryWidget";
 
 export default function Layout() {
   return (
@@ -85,6 +86,10 @@ export default function Layout() {
                   href: "mailto:makcodebros@gmail.com"
                 },
                 {
+                  text: "WhatsApp: +91 7356743300",
+                  href: "https://wa.me/917356743300"
+                },
+                {
                   text: "7356743300",
                   href: "tel:7356743300"
                 }
@@ -118,6 +123,7 @@ export default function Layout() {
           backToTop="Back to top"
         />
       </footer>
+      <WhatsAppEnquiryWidget />
     </div>
   );
 }
