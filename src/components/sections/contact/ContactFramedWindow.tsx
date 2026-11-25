@@ -26,6 +26,7 @@ type ContactFramedWindowProps = {
   className?: string;
   email?: string;
   phone?: string;
+  whatsapp?: string;
 };
 
 const defaults: Photo[] = [
@@ -48,6 +49,7 @@ const ContactFramedWindow = ({
   className,
   email,
   phone,
+  whatsapp = "+91 7356743300",
 }: ContactFramedWindowProps) => {
   const reduce = !!useReducedMotion();
   const kit = useKitMotion();
@@ -107,7 +109,7 @@ const ContactFramedWindow = ({
       <div className="mx-auto grid w-[var(--container)] grid-cols-1 gap-[clamp(3rem,5vw,5rem)] lg:grid-cols-2 lg:items-stretch">
         <div className="flex flex-col">
           <NudgeHeader title={title} align="left" />
-          {(email || phone) && (
+          {(email || phone || whatsapp) && (
             <motion.div
               initial={reduce ? false : { opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -125,6 +127,21 @@ const ContactFramedWindow = ({
                     className="font-mono text-[length:var(--text-body)] text-foreground transition-colors hover:text-accent underline underline-offset-4"
                   >
                     {email}
+                  </a>
+                </div>
+              )}
+              {whatsapp && (
+                <div className="flex flex-col gap-[0.25rem]">
+                  <p className="font-mono text-[length:calc(var(--text-small)*0.85)] uppercase tracking-[var(--label-tracking)] text-muted-foreground">
+                    WhatsApp Direct
+                  </p>
+                  <a
+                    href={`https://wa.me/${whatsapp.replace(/[^0-9]/g, "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[length:var(--text-body)] text-[#25D366] transition-colors hover:underline underline-offset-4 font-semibold"
+                  >
+                    {whatsapp}
                   </a>
                 </div>
               )}
